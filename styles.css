@@ -1,0 +1,144 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background: #c2b3ff;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/static/images/flat-lay-workstation-with-copy-space-laptop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    margin-left: auto; /* Décale la liste de liens à droite */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    font-family: "Mooli", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #c2b3ff  ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text p {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    color: #fff; /* Couleur blanche pour le texte */
+}
+
+.header-text h1{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 70px;
+    margin-top: 20px;
+    color: #c2b3ff  ;
+}
+
+#about{
+    padding: 80px;
+    color: black;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-family: "Mooli", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px; /* Espace entre le titre et le paragraphe */
+}
+
+.about-col-2 p {
+    font-family: "Mooli", sans-serif; /* Applique la même police que le titre */
+    font-size: 18px; /* Ajuste la taille de la police du paragraphe si nécessaire */
+    color: black;
+    line-height: 1.6; /* Ajoute de l'espacement entre les lignes du paragraphe */
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
